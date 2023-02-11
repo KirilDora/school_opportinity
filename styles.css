@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', 'sans-serif';
+  background: #FFF2F3;
+  color: #252B42;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.mobile {
+  display: none;
+}
+
+/* HEADER */
+
+.header{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+
+.header__brand-name{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header__navigation{
+  display: flex;
+  gap: 30px;
+  margin: 0 15px 0 15px;
+}
+
+.header__navigation > a{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #737373;
+}
+
+.button{
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: #96BB7C;
+  padding: 15px 35px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.button-join{
+  margin-left: 0px;
+  color: #FFFF;
+  background-color: #96BB7C;
+}
+
+.button-learn{
+  border: 1px solid #96BB7C;
+  color: #96BB7C;
+}
+
+.button-group{
+  display: flex;
+  gap: 15px;
+}
+
+/* BODY */
+
+.main{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+.main__container{
+  display: flex;
+  flex-direction: column;
+  padding: 0 10% 0 10%;
+}
+
+.main__welcome-phrase{
+  font-weight: 600;
+  font-size: 16px;
+  padding: 18px 0;
+  color: #96BB7C;
+}
+
+.advantage-main{
+  font-weight: 600;
+  font-size: 58px;
+  color: #252B42;
+  padding: 10px 0;
+}
+
+.advantage-second{
+  font-weight: 400;
+  font-size: 20px;
+  color: #737373;
+  padding: 3vh 0;
+}
+
+.main__navigation{
+  margin: 15px 0;
+}
+
+/* FOOTER */
+
+.main-image{
+  width: 100%;
+}
+
+/* RESPONSIVITY */
+
+@media screen and (max-width: 850px){
+  .header__navigation{
+    display: none;
+  }
+
+  .header{
+    justify-content: space-between;
+    margin-left:5%;
+    margin-right: 5%;
+  }
+
+  .button{
+    padding: 10px 20px;
+  }
+
+  .main{
+    flex-direction: column;
+  }
+
+  .advantage-main{
+    font-size: 32px;
+  }
+
+  .main-image{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header {
+    flex-flow: column;
+    gap: 1vh;
+  }
+}
